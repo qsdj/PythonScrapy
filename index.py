@@ -28,7 +28,7 @@ def getTargetImg(html):
 
     print("the next targetUrl => " + nextUrl + " ; the len : " + str(len(nextUrl)))
     if len(nextUrl) < 20:
-        htmlInfo = getHtml("http://www.mm131.com/xinggan/" + nextUrl)
+        htmlInfo = getHtml("" + nextUrl)
         getTargetImg(htmlInfo)
 
 
@@ -36,7 +36,7 @@ def doinio(beginindex,endindex):
     i = beginindex
     while i>endindex:
         i-=1
-        htmlInfo = getHtml("http://www.mm131.com/xinggan/"+str(i)+".html")
+        htmlInfo = getHtml(""+str(i)+".html")
         if htmlInfo=="":
             continue
         getTargetImg(htmlInfo)
