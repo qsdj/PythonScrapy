@@ -33,7 +33,7 @@ from bs4 import BeautifulSoup
 
 
 email = "1603411701@qq.com"   # 账号
-raw_pwd = "5282784"           # 密码  这里的账号密码是我个人的,请不要外泄了.
+raw_pwd = ""                  # 密码
 
 data = {
     'utf8' : '✓',
