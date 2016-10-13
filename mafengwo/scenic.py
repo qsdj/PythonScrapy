@@ -28,6 +28,7 @@ def GET(url):
 
 def Do():
     html = GET(mafengwo)
+    print html
     jsonInfo = json.loads(html)
     print jsonInfo["data"]["list"][0]["name"]
 
