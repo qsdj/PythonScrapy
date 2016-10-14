@@ -54,9 +54,7 @@ class TodoHandler(BaseHTTPRequestHandler):
         length = int(self.headers['content-length'])
         post_values = self.rfile.read(length)
 
-        print post_values
-
-        jsondata = json.loads(post_values[5:])  # [5:]
+        jsondata = json.loads(post_values[5:])  # [5:]  此处接收探测器的请求,总是带有data=,只能截取掉
 
         session = DBSession()
 
